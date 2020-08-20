@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textViewAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textView"
+        android:textSize="@dimen/text_size_answers"
+        android:textColor="#FFFFFF"
+        android:background="#E38802"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnswer3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#26C602"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textView"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size_answers"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAnswer1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textView"
+        android:textSize="@dimen/text_size_answers"
+        android:textColor="#FFFFFF"
+        android:background="#0269BA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewAnswer2" />
+
+    <TextView
+        android:id="@+id/textViewAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAnswer"
+        android:text="TextView"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textView"
+        android:textSize="@dimen/text_size_answers"
+        android:textColor="#FFFFFF"
+        android:background="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewAnswer0" />
+
+    <TextView
+        android:id="@+id/textViewAnswersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="@dimen/margin_for_timer_and_counter"
+        android:textSize="18sp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_for_timer_and_counter"
+        android:layout_marginEnd="@dimen/margin_for_timer_and_counter"
+        android:text="TextView"
+        android:textColor="#FFC107"
+        android:textSize="@dimen/text_size_answers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:textSize="32sp"
+        android:textColor="#222222"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

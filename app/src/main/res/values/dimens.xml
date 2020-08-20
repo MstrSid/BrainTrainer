@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_inside_textView">32dp</dimen>
+    <dimen name="text_size_answers">24sp</dimen>
+    <dimen name="margin_for_timer_and_counter">32dp</dimen>
+</resources>
