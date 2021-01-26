@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         answers.add(textViewAnswer1);
         answers.add(textViewAnswer2);
         answers.add(textViewAnswer3);
-        CountDownTimer timer = new CountDownTimer(300000,1000) {
+        CountDownTimer timer = new CountDownTimer(181000,1000) {
             @Override
             public void onTick(long l) {
                 textViewTimer.setText(getTime(l));
