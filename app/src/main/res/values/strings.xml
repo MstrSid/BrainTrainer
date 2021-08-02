@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Brain Trainer</string>
+    <string name="toast_right_answer">Right</string>
+    <string name="toast_false_answer">"False. Right answer: %s"</string>
+    <string name="play_again_btn">Play again</string>
+    <string name="final_text">You give %s right answer of %s total.\nMax result: %s</string>
+    <string name="start">Start</string>
+    <string name="choose_minutes_count">Minutes count: %s</string>
+</resources>
