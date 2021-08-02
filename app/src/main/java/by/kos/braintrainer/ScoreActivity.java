@@ -33,7 +33,7 @@ public class ScoreActivity extends AppCompatActivity {
         binding.btnStartNewGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentNewGame = new Intent(view.getContext(), MainActivity.class);
+                Intent intentNewGame = new Intent(view.getContext(), StartActivity.class);
                 startActivity(intentNewGame);
             }
         });

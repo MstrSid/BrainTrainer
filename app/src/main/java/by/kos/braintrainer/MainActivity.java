@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                this.cancel();
                 isGameOver = true;
                 if (binding.lottieAnim != null) {
                     binding.lottieAnim.setProgress(0.0f);
